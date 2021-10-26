@@ -15,8 +15,8 @@ const ERC20_MIN_ABI = [
 ];
 
 const web3 = new Web3(
-  new Web3.providers.WebsocketProvider(
-    "wss://mainnet.infura.io/ws/v3/1870caa4a47441fdb01a85322c1cd4c7"
+  new Web3.providers.HttpProvider(
+    "https://mainnet.infura.io/v3/1870caa4a47441fdb01a85322c1cd4c7"
   )
 );
 

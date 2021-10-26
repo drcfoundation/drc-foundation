@@ -58,10 +58,6 @@ const MultisigFundWallet: React.FC<MultisigFundWalletProps> = ({
         <GEN00NFTGiveAway lang={lang} />
       </MarginBox>
 
-      <MarginBox margin={{ bottom: grid(4) }}>
-        <FundUseCases lang={lang} />
-      </MarginBox>
-
       {button}
 
       <WalletInfoModal

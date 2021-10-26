@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Language } from "../../../../../../types/language";
-import { NFT01_GIVE_AWAY } from "../../../../../data/nft-give-away";
 import { grid } from "../../../../ui-library/design-tokens/grid";
 import Image from "../../../../ui-library/image/image";
 import MarginBox from "../../../../ui-library/margin-box/margin-box";
@@ -8,16 +7,10 @@ import Heading from "../../../../ui-library/text/heading";
 import ExternalLinkBlackIcon from "../../../../../images/icons/external-link-icon-black.svg";
 import ExternalLinkWhiteIcon from "../../../../../images/icons/external-link-icon-white.svg";
 import { SiteContext } from "../../../../../site-context/site-context";
-import { useNFTBalance } from "../../../../../hooks/query-hooks/use-foundation-balance";
 import Text from "../../../../ui-library/text/text";
 import { Fonts } from "../../../../ui-library/design-tokens/fonts";
 import NftClaimedProgress from "../nft-claimed-progress/nft-claimed-process";
 import styles from "./gen01-give-away.styles";
-
-const headingOnGoing: Record<Language, string> = {
-  en: "Become a DRC Supporting Member GEN01",
-  zh: "成为GEN01的DRC赞助成员",
-};
 
 const headingClaimed: Record<Language, string> = {
   en: "DRC Supporting Member GEN01",
@@ -26,8 +19,8 @@ const headingClaimed: Record<Language, string> = {
 
 const description: Record<Language, string> = {
   en:
-    "100 limited edition Official DRC Supporting Member GEN01 Digital Collectibles",
-  zh: "100个官方限量版DRC赞助成员NFT收藏",
+    "50 limited edition Official DRC Supporting Member GEN01 Digital Collectibles",
+  zh: "50个官方限量版DRC赞助成员NFT收藏",
 };
 
 const subHeadingClaimed: Record<Language, string> = {
@@ -45,19 +38,12 @@ interface NFTGiveAwayProps {
 }
 
 const GEN01NFTGiveAway: React.FC<NFTGiveAwayProps> = ({ lang = "en" }) => {
-  const { data: remaining } = useNFTBalance("gen01");
-
-  if (remaining === undefined) {
-    return null;
-  }
-
   const { isDarkMode } = React.useContext(SiteContext);
   const externalLinkIcon = isDarkMode
     ? ExternalLinkWhiteIcon
     : ExternalLinkBlackIcon;
 
-  const isAllClaimed = remaining === 0;
-  const heading = isAllClaimed ? headingClaimed : headingOnGoing;
+  const heading = headingClaimed;
 
   return (
     <div>
@@ -68,35 +54,22 @@ const GEN01NFTGiveAway: React.FC<NFTGiveAwayProps> = ({ lang = "en" }) => {
       <div css={styles.description}>{description[lang]}</div>
 
       <MarginBox margin={{ bottom: grid(4) }}>
-        <NftClaimedProgress lang={lang} remaining={remaining} />
+        <NftClaimedProgress lang={lang} remaining={0} totalNft={50} />
       </MarginBox>
 
-      {isAllClaimed && (
-        <>
-          <Text
-            component="div"
-            textAlign="center"
-            textSize={18}
-            weight={Fonts.Weight.Bold}
-            margin={{ bottom: grid(2) }}
-          >
-            {subHeadingClaimed[lang]}
-          </Text>
+      <Text
+        component="div"
+        textAlign="center"
+        textSize={18}
+        weight={Fonts.Weight.Bold}
+        margin={{ bottom: grid(2) }}
+      >
+        {subHeadingClaimed[lang]}
+      </Text>
 
-          <Text component="div" css={styles.description}>
-            {descriptionClaimed[lang]}
-          </Text>
-        </>
-      )}
-
-      {!isAllClaimed &&
-        NFT01_GIVE_AWAY[lang].map((content) => (
-          <p
-            key={content.slice(0, 30)}
-            css={styles.paragraph}
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
-        ))}
+      <Text component="div" css={styles.description}>
+        {descriptionClaimed[lang]}
+      </Text>
 
       <a
         css={styles.gifLink}

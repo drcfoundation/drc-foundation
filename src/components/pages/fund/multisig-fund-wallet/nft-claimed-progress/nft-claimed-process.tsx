@@ -5,22 +5,24 @@ import styles from "./nft-claimed-process.styles";
 interface ClaimedProgressProps {
   lang?: Language;
   remaining: number;
+  totalNft?: number;
 }
 
 const NftClaimedProgress: React.FC<ClaimedProgressProps> = ({
   lang = "en",
   remaining,
+  totalNft = 100,
 }) => {
-  const claimedCount = 100 - remaining;
+  const claimedCount = totalNft - remaining;
 
   const label: Record<Language, string> = {
-    en: `${claimedCount} of 100 NFTs claimed`,
+    en: `${claimedCount} of ${totalNft} NFTs claimed`,
     zh: `${claimedCount}个NFT已送出`,
   };
 
   const total: Record<Language, string> = {
-    en: "100 total",
-    zh: "总计100个",
+    en: `${totalNft} total`,
+    zh: `总计${totalNft}个`,
   };
 
   return (
@@ -30,7 +32,10 @@ const NftClaimedProgress: React.FC<ClaimedProgressProps> = ({
         <div>{total[lang]}</div>
       </div>
       <div css={styles.progressBar}>
-        <div css={styles.activeArea} style={{ width: `${claimedCount}%` }} />
+        <div
+          css={styles.activeArea}
+          style={{ width: `${(claimedCount / totalNft) * 100}%` }}
+        />
       </div>
     </div>
   );
