@@ -9,7 +9,7 @@ export const WHO_WE_ARE: Record<Language, WhoWeAre> = {
   en: {
     title: "Who we are",
     contents: [
-      `The DRC Foundation is a non-official, community-led organization dedicated to supporting the growth and development of the DRC ecosystem. The DRC Foundation role is not to control or manage DRC network, as it is fully decentralized. Our mission is to advocate for DRC ecosystem and to facilitate its global adoption and success. <a href="#roadmap">See the DRC Roadmap</a>.`,
+      `The DRC Foundation is a non-official, community-led organization dedicated to supporting the growth and development of the DRC ecosystem. The DRC Foundation role is not to control or manage DRC network, as it is fully decentralized. Our mission is to advocate for DRC ecosystem and to facilitate its global adoption and success.`,
     ],
   },
   zh: {
