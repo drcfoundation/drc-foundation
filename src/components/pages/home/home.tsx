@@ -10,7 +10,6 @@ import RelatedLinks from "./related-links/related-links";
 import WhoWeAre from "./who-we-are/who-we-are";
 import HowToBuyVideo from "./how-to-buy-video/how-to-buy-video";
 import Exchanges from "./exchanges/exchanges";
-import Roadmap from "./roadmap/roadmap";
 
 interface HomeProps {
   lang?: Language;
@@ -52,8 +51,6 @@ const Home: React.FC<HomeProps> = ({ lang = "en" }) => {
       >
         <Exchanges lang={lang} />
       </MarginBox>
-
-      {lang === "en" && <Roadmap />}
     </Container>
   );
 };
