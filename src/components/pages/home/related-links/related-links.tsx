@@ -63,8 +63,8 @@ const mainCommunityLinks = [
     url: communityLinks.snapshot.url,
   },
   {
-    label: "OUTREACH TG",
-    url: communityLinks.telegramOutreach.url,
+    label: "REDDIT",
+    url: communityLinks.reddit.url,
   },
   {
     label: "DRC GLOBAL SITE",

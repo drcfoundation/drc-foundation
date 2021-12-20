@@ -265,12 +265,12 @@ export const publicationLink = {
     iconBlack: YahooBlackIcon,
     iconWhite: YahooWhiteIcon,
   },
-  forbes: {
-    displayLabel: "Forbes",
+  yahoomoney: {
+    displayLabel: "Yahoo! Money",
     url:
-      "https://www.forbes.com/sites/kenrapoza/2021/01/26/telegram-gains-on-whatsapp-blunder-disgust-with-legacy-social-media/?sh=3cb19e4e7346",
-    iconBlack: ForbesBlackIcon,
-    iconWhite: ForbesWhiteIcon,
+      "https://money.yahoo.com/digital-currency-drc-become-fully-171500705.html",
+    iconBlack: YahooBlackIcon,
+    iconWhite: YahooWhiteIcon,
   },
   businessInsider: {
     displayLabel: "Business Insider",
@@ -296,7 +296,7 @@ export const publicationLink = {
   benzinga: {
     displayLabel: "Benzinga",
     url:
-      "https://www.benzinga.com/pressreleases/21/03/ac20007695/digital-reserve-platform-hedge-inflation-risks-with-decentralized-finance",
+      "https://www.benzinga.com/markets/cryptocurrency/21/09/22822776/pure-decentralized-defi-digital-reserve-currency",
     iconBlack: BenzingaBlackIcon,
     iconWhite: BenzingaWhiteIcon,
   },

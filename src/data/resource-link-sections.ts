@@ -27,7 +27,7 @@ export const communityResourceLinks = [
 export const mediaPostLinks = [
   publicationLink.bloomberg,
   publicationLink.yahoo,
-  publicationLink.forbes,
+  publicationLink.yahoomoney,
   publicationLink.businessInsider,
   publicationLink.investing,
   publicationLink.hackernoon,
