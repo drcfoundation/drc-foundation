@@ -14,8 +14,6 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ lang }) => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer css={styles.root}>
       <Container css={styles.container}>
@@ -42,8 +40,6 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
             ))}
           </Row>
         </div>
-
-        <div css={styles.copyRight}>© {currentYear} DRC Foundation</div>
       </Container>
 
       <div css={styles.darkModeToggle}>

@@ -19,8 +19,7 @@ const root = (theme: Theme): Interpolation => ({
 const container: Interpolation = {
   [Device.DesktopTablet]: {
     display: "flex",
-    flexDirection: "row-reverse",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
   },
 };
