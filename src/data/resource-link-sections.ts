@@ -21,7 +21,6 @@ export const communityResourceLinks = [
   communityLinks.reddit,
   communityLinks.communityArt,
   communityLinks.officialStore,
-  communityLinks.gitbook,
 ];
 
 export const mediaPostLinks = [

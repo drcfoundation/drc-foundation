@@ -15,16 +15,13 @@ import GithubBlackIcon from "../images/resources/black/github.svg";
 import DRCBlackIcon from "../images/resources/black/drc.svg";
 import SnapshotBlackIcon from "../images/resources/black/snapshot.svg";
 import TrelloBlackIcon from "../images/resources/black/trello.svg";
-import ChartExBlackIcon from "../images/resources/black/chartex.svg";
 import YoutubeBlackIcon from "../images/resources/black/youtube.svg";
 import RedditBlackIcon from "../images/resources/black/reddit.svg";
 import CommunityArtBlackIcon from "../images/resources/black/community-art.svg";
 import OfficialStoreBlackIcon from "../images/resources/black/official-store.svg";
 import YahooBlackIcon from "../images/resources/black/yahoo.svg";
 import HackernoonBlackIcon from "../images/resources/black/hackernoon.svg";
-import GitbookBlackIcon from "../images/resources/black/gitbook.svg";
 import BloombergBlackIcon from "../images/resources/black/bloomberg.svg";
-import ForbesBlackIcon from "../images/resources/black/forbes.svg";
 import BusinessInsiderBlackIcon from "../images/resources/black/business-insider.svg";
 import InvestingBlackIcon from "../images/resources/black/investing-com.svg";
 import BenzingaBlackIcon from "../images/resources/black/benzinga.svg";
@@ -47,16 +44,13 @@ import GithubWhiteIcon from "../images/resources/white/github.svg";
 import DRCWhiteIcon from "../images/resources/white/drc.svg";
 import SnapshotWhiteIcon from "../images/resources/white/snapshot.svg";
 import TrelloWhiteIcon from "../images/resources/white/trello.svg";
-import ChartExWhiteIcon from "../images/resources/white/chartex.svg";
 import YoutubeWhiteIcon from "../images/resources/white/youtube.svg";
 import RedditWhiteIcon from "../images/resources/white/reddit.svg";
 import CommunityArtWhiteIcon from "../images/resources/white/community-art.svg";
 import OfficialStoreWhiteIcon from "../images/resources/white/official-store.svg";
 import YahooWhiteIcon from "../images/resources/white/yahoo.svg";
 import HackernoonWhiteIcon from "../images/resources/white/hackernoon.svg";
-import GitbookWhiteIcon from "../images/resources/white/gitbook.svg";
 import BloombergWhiteIcon from "../images/resources/white/bloomberg.svg";
-import ForbesWhiteIcon from "../images/resources/white/forbes.svg";
 import BusinessInsiderWhiteIcon from "../images/resources/white/business-insider.svg";
 import InvestingWhiteIcon from "../images/resources/white/investing-com.svg";
 import BenzingaWhiteIcon from "../images/resources/white/benzinga.svg";
@@ -158,12 +152,6 @@ export const communityLinks = {
     url: "https://teespring.com/en-GB/stores/drcfoundation",
     iconBlack: OfficialStoreBlackIcon,
     iconWhite: OfficialStoreWhiteIcon,
-  },
-  gitbook: {
-    displayLabel: "DRC<br>GitBook",
-    url: "https://app.gitbook.com/@drc-foundation/s/drc-ecosystem/",
-    iconBlack: GitbookBlackIcon,
-    iconWhite: GitbookWhiteIcon,
   },
 };
 
