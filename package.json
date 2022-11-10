@@ -9,7 +9,7 @@
     "@types/react-scroll": "^1.8.2",
     "axios": "^0.21.1",
     "dateformat": "^3.0.3",
-    "electron": "^11.1.0",
+    "electron": "^18.3.7",
     "emotion-theming": "^10.0.27",
     "format-number": "^3.0.0",
     "gatsby": "^2.31.1",
