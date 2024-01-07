@@ -5,11 +5,11 @@ import MarginBox from "../../ui-library/margin-box/margin-box";
 import PageHeading from "../../modules/page-heading/page-heading";
 import TopLogo from "../../modules/top-logo/top-logo";
 import { Language } from "../../../../types/language";
-import MarketChart from "./market-chart/market-chart";
+// import MarketChart from "./market-chart/market-chart";
 import RelatedLinks from "./related-links/related-links";
 import WhoWeAre from "./who-we-are/who-we-are";
-import HowToBuyVideo from "./how-to-buy-video/how-to-buy-video";
-import Exchanges from "./exchanges/exchanges";
+// import HowToBuyVideo from "./how-to-buy-video/how-to-buy-video";
+// import Exchanges from "./exchanges/exchanges";
 
 interface HomeProps {
   lang?: Language;
@@ -30,27 +30,27 @@ const Home: React.FC<HomeProps> = ({ lang = "en" }) => {
         <WhoWeAre lang={lang} />
       </MarginBox>
 
-      <MarginBox margin={{ bottom: grid(8) }}>
+      {/* <MarginBox margin={{ bottom: grid(8) }}>
         <MarketChart lang={lang} />
-      </MarginBox>
+      </MarginBox> */}
 
       <MarginBox margin={{ bottom: grid(5) }}>
         <RelatedLinks lang={lang} />
       </MarginBox>
 
-      {lang === "en" && (
+      {/* {lang === "en" && (
         <MarginBox
           margin={{ desktop: { bottom: grid(5) }, mobile: { bottom: grid(3) } }}
         >
           <HowToBuyVideo />
         </MarginBox>
-      )}
+      )} */}
 
-      <MarginBox
+      {/* <MarginBox
         margin={{ desktop: { bottom: grid(5) }, mobile: { bottom: grid(2) } }}
       >
         <Exchanges lang={lang} />
-      </MarginBox>
+      </MarginBox> */}
     </Container>
   );
 };

@@ -64,9 +64,9 @@ const Ecosystem: React.FC<EcosystemProps> = ({ lang = "en" }) => {
         />
       </MarginBox>
 
-      <MarginBox margin={{ bottom: grid(3) }}>
+      {/* <MarginBox margin={{ bottom: grid(3) }}>
         <LinksSection heading={headings.media[lang]} links={mediaPostLinks} />
-      </MarginBox>
+      </MarginBox> */}
 
       <MarginBox margin={{ bottom: grid(3) }}>
         <LinksSection
