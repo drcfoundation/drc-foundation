@@ -29,24 +29,24 @@ export const footerLinks = [
     icon: LinkedInSmIcon,
     url: informationLink.linkedIn.url,
   },
-  {
-    name: "Uniswap",
-    icon: UniswapSmIcon,
-    url: marketLinks.uniswapInfo.url,
-  },
+  // {
+  //   name: "Uniswap",
+  //   icon: UniswapSmIcon,
+  //   url: marketLinks.uniswapInfo.url,
+  // },
   {
     name: "Medium",
     icon: MediumSmIcon,
     url: informationLink.medium.url,
   },
-  {
-    name: "CoinGecko",
-    icon: CoingeckoSmIcon,
-    url: marketLinks.coingecko.url,
-  },
-  {
-    name: "Snapshot",
-    icon: SnapshotSmIcon,
-    url: communityLinks.snapshot.url,
-  },
+  // {
+  //   name: "CoinGecko",
+  //   icon: CoingeckoSmIcon,
+  //   url: marketLinks.coingecko.url,
+  // },
+  // {
+  //   name: "Snapshot",
+  //   icon: SnapshotSmIcon,
+  //   url: communityLinks.snapshot.url,
+  // },
 ];
