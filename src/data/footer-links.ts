@@ -37,7 +37,7 @@ export const footerLinks = [
   {
     name: "Medium",
     icon: MediumSmIcon,
-    url: informationLink.medium.url,
+    url: informationLink.mediumFoundation.url,
   },
   // {
   //   name: "CoinGecko",

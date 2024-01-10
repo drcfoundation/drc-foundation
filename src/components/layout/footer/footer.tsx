@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
     <footer css={styles.root}>
       <Container css={styles.container}>
         <div css={styles.links}>
-          <Row>
+          <Row isCenter={true}>
             {footerLinks.map((link) => (
               <Column
                 key={link.url}
