@@ -36,9 +36,9 @@ const MultisigFundWallet: React.FC<MultisigFundWalletProps> = ({
 
   return (
     <div id="nft" css={styles.root}>
-      <MarginBox margin={{ bottom: grid(4) }}>
+      {/* <MarginBox margin={{ bottom: grid(4) }}>
         <GEN01NFTGiveAway lang={lang} />
-      </MarginBox>
+      </MarginBox> */}
 
       <Heading component="h2" textAlign="center" margin={{ bottom: grid(2) }}>
         {heading[lang]}
@@ -52,13 +52,13 @@ const MultisigFundWallet: React.FC<MultisigFundWalletProps> = ({
         <FundBalance />
       </MarginBox>
 
-      <Separator margin={{ bottom: grid(4) }} />
+      {/* <Separator margin={{ bottom: grid(4) }} /> */}
 
-      <MarginBox margin={{ bottom: grid(5) }}>
+      {/* <MarginBox margin={{ bottom: grid(5) }}>
         <GEN00NFTGiveAway lang={lang} />
-      </MarginBox>
+      </MarginBox> */}
 
-      {button}
+      {/* {button} */}
 
       <WalletInfoModal
         isOpen={isModalOpen}

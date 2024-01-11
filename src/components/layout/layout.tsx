@@ -38,7 +38,7 @@ const Layout: React.FC<LayoutProps> = ({ activeTab, lang, children }) => {
         <Seal />
       </Container>
 
-      <SocialShares />
+      {/* <SocialShares /> */}
 
       <Footer />
     </ThemeProvider>
