@@ -3,7 +3,7 @@ export const FUND = {
     title: "Fund",
     contents: [
       "The DRC Foundation Fund was established to support the development of the DRC ecosystem. All the received contributions are held in a secure multi-signature crypto wallet and are used strictly for the purposes of supporting the DRC ecosystem growth. Usage of the funds are fully transparent and disclosed to the DRC community members.",
-      "The DRC Foundation Fund is managed by community elected DRC members in a secure, industry grade, multi-signature wallet. A policy is set requiring 3 of the 5 to authorize and sign any transaction. Any changes to the management of the wallet also requires 3 to sign and authorise those changes.",
+      "The DRC Foundation Fund is managed by community elected DRC members in a secure, industry grade, multi-signature wallet. A policy is set requiring 3 of the 5 to authorize and sign any transaction. Any changes to the management of the wallet also require 3 to sign and authorise those changes.",
     ],
   },
   zh: {
